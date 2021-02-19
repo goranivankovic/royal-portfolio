@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Anime from 'react-anime'
 import { FiHome } from 'react-icons/fi';
 import Media from "react-media"
 
-export default class NavBaric extends Component {
+export default class NavBaric extends React.Component{
     constructor(){
         super()
 
@@ -36,10 +36,26 @@ export default class NavBaric extends Component {
 
 
 
-            <Media query={{ maxWidth: 599 }}>
+            <Media query={{ maxWidth: 768 }}>
             {matches =>
               matches ? (
-             <p>adsada</p>
+            <div className="navBaricMain768">
+                <div className="navicPosition768">
+                    <ul>
+                        <li>HOME</li>
+                        <li>ABOUT</li>
+                        <li>SKILLS</li>
+                        <li>PORTFOLIO</li>
+                        <li>CONTACT</li>
+
+
+
+                    </ul>
+
+                </div>
+
+
+            </div>
                 ) : (
 
 
