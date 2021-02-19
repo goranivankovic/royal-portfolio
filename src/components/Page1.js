@@ -5,10 +5,11 @@ import Media from "react-media"
 import Particles from 'react-particles-js';
 import NavBaric from './NavBaric';
 import { FaBars } from 'react-icons/fa'
-import { Container, Row,Col } from 'react-bootstrap';
+import { Container, Row,Col,Button } from 'react-bootstrap';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 
 
 
@@ -80,6 +81,10 @@ export default class Page1 extends Component {
    
     render() {
 		AOS.init();
+		const imeColor={
+			color:'#ffa500'
+
+		}
 
 
        
@@ -215,12 +220,12 @@ data-aos-once="false"
 	<Row>
 
 		<Col className="h2 text-light text-center" xs={12} 
-	data-aos="fade-down"
+	data-aos="fade-right"
     data-aos-delay="3000"
     data-aos-duration="1300"
     data-aos-easing="ease-out-cubic"
     data-aos-once="false"
-	>GORAN IVANKOVIĆ</Col>
+	 >GORAN IVANKOVIĆ</Col>
 	</Row>
 </Container>
 <br/>
@@ -237,6 +242,22 @@ data-aos-once="false"
     data-aos-easing="ease-in-out"
     data-aos-once="false"
 	>Frontend   Developer  and  Designer</Col>
+	</Row>
+</Container>
+<br/>
+<br/>
+
+<Container>
+	<Row>
+		<Col className="text-center" xs={12}>
+		<Button className="btn-lg bg-transparent"
+		data-aos="fade-left"
+		data-aos-delay="3000"
+		data-aos-duration="1300"
+		data-aos-easing="ease-out-cubic"
+		data-aos-once="false"
+		onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>Next</Button>
+		</Col>
 	</Row>
 </Container>
 
