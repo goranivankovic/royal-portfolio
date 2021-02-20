@@ -124,7 +124,7 @@ export default class Page1 extends Component {
 <div className="navBaricMain768">
                 <div className="navicPosition768">
                     <ul>
-                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="glow">HOME</li>
+                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>HOME</li>
                         <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>ABOUT</li>
                         <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>SKILLS</li>
                         <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>PORTFOLIO</li>
@@ -148,13 +148,13 @@ export default class Page1 extends Component {
 <Container>
 	<Row>
 
-		<Col className="h5 text-light text-center" xs={12} 
+		<Col className="h5 text-center" xs={12} 
 	data-aos="fade-right"
     data-aos-delay="3000"
     data-aos-duration="1300"
     data-aos-easing="ease-out-cubic"
     data-aos-once="false"
-	 >GORAN IVANKOVIĆ</Col>
+	 style={imeColor}>GORAN IVANKOVIĆ</Col>
 	</Row>
 </Container>
 <br/>
@@ -164,7 +164,7 @@ export default class Page1 extends Component {
 <Container>
 	<Row>
 
-		<Col className="h5 text-light text-center glow" xs={12} onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} 
+		<Col className="h5 text-light text-center" xs={12} onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} 
 	data-aos="fade-up"
     data-aos-delay="1500"
     data-aos-duration="1300"
