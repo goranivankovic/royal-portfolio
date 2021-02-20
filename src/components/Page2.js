@@ -153,7 +153,7 @@ export default class Page2 extends Component {
     data-aos-delay="3000"
     data-aos-duration="1300"
     data-aos-easing="ease-out-cubic"
-    data-aos-once="false"
+    data-aos-once="true"
 	 style={imeColor}>ABOUT</Col>
 	</Row>
 </Container>
@@ -193,7 +193,7 @@ Love  to learn new technologies,and make  unique ui/ux designs.
 		data-aos-delay="3000"
 		data-aos-duration="1300"
 		data-aos-easing="ease-out-cubic"
-		data-aos-once="false"
+		data-aos-once="true"
 		onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>Next</Button>
 		</Col>
 	</Row>
