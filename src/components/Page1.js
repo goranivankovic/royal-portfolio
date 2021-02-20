@@ -6,9 +6,11 @@ import Particles from 'react-particles-js';
 import NavBaric from './NavBaric';
 import { FaBars,FaLinkedin,FaYoutube,FaGithub,FaFacebook } from 'react-icons/fa'
 import { Container, Row,Col,Button } from 'react-bootstrap';
+import {Link } from 'react-router-dom'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 
 
 
@@ -266,7 +268,7 @@ data-aos-once="false"
 	 </Anime>  
 
 	 <Anime translateY={[-400,0]} skewY={[-80,0]} duration={2000} delay={1800}>
-   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>ABOUT</li>
+ <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>ABOUT</li>
    </Anime>  
 
  
