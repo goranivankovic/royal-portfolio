@@ -51,10 +51,12 @@ export default class Page2 extends Component {
 
 	spustiNavBar(e){
 		const navBaricMain768 =document.querySelector('.navBaricMain768')
+        const aboutTextpravitext =document.querySelector('.aboutTextpravitext');
 
 		if(this.state.laz && e.button=='0'){
 		  
 			navBaricMain768.style.display='flex'
+            aboutTextpravitext.style.opacity='0'
 
 			this.setState({
 				laz:false
@@ -64,6 +66,8 @@ export default class Page2 extends Component {
 
 		}else if(!this.state.laz && e.button=='0'){
 			navBaricMain768.style.display='none'
+            aboutTextpravitext.style.opacity='1'
+
 
 			this.setState({
 				laz:true
@@ -141,7 +145,7 @@ export default class Page2 extends Component {
 
 			<div className="aboutText">
 
-<Container>
+<Container className="aboutTextpravitext">
 	<Row>
 
 		<Col className="h5 text-center" xs={12} 
@@ -160,7 +164,7 @@ export default class Page2 extends Component {
 <Container>
 	<Row className="footerConRow">
 
-		<Col className="p text-light text-center" xs={12} 
+		<Col className="pt text-light text-center" xs={12} 
 	data-aos="fade-up"
     data-aos-delay="1500"
     data-aos-duration="1300"
@@ -345,6 +349,7 @@ Love  to learn new technologies,and make  unique ui/ux designs.
 		</Col>
 	</Row>
 </Container>
+
 
 </div>
 <div className="footer">
