@@ -100,7 +100,7 @@ export default class Page1 extends Component {
 
 						<div className="navicMainDiv768">
 
-								
+{/* 								
 						<Particles className="particles"
 							params={{
 								"particles": {
@@ -119,7 +119,7 @@ export default class Page1 extends Component {
 										}
 									}
 								}
-							}} />
+							}} /> */}
 
 <div className="navBaricMain768">
                 <div className="navicPosition768">
