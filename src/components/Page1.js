@@ -4,7 +4,7 @@ import Media from "react-media"
 
 import Particles from 'react-particles-js';
 import NavBaric from './NavBaric';
-import { FaBars } from 'react-icons/fa'
+import { FaBars,FaLinkedin,FaYoutube,FaGithub,FaFacebook } from 'react-icons/fa'
 import { Container, Row,Col,Button } from 'react-bootstrap';
 
 import AOS from 'aos';
@@ -192,6 +192,29 @@ export default class Page1 extends Component {
 
 </div>
 
+<div className="footer">
+	<Container className="footerCon">
+		<Row className="footerConRow">
+			<Col md={5} sm={8}  xs={12} className="text-center text-light footerColona">
+		 
+	   <a href="https://www.linkedin.com/in/goran-ivankovi%C4%87-86b19b1b9/" >	<FaLinkedin  className="h5 ri"/></a>
+	
+	
+		<a href="https://www.youtube.com/"><FaYoutube  className="h5 ri" /></a>
+	
+		
+		<a href="https://github.com/goranivankovic"><FaGithub  className="h5 ri"/></a>	
+
+		
+		<a href="https://sr-rs.facebook.com/goran.ivankovic.12"><FaFacebook  className="h5 ri"/></a>
+	
+			</Col>
+		
+		</Row>
+	</Container>
+
+</div>
+
 
 
 						
@@ -311,6 +334,34 @@ data-aos-once="false"
 </Container>
 
 </div>
+<div className="footer">
+	<Container className="footerCon">
+		<Row className="footerConRow">
+			<Col xs={5} className="text-center text-light footerColona">
+		 
+	   <a href="https://www.linkedin.com/in/goran-ivankovi%C4%87-86b19b1b9/" >	<FaLinkedin  className="h3 ri"/></a>
+	
+	
+		<a href="https://www.youtube.com/"><FaYoutube  className="h3 ri" /></a>
+	
+		
+		<a href="https://github.com/goranivankovic"><FaGithub  className="h3 ri"/></a>	
+
+		
+		<a href="https://sr-rs.facebook.com/goran.ivankovic.12"><FaFacebook  className="h3 ri"/></a>
+	
+			</Col>
+		
+		</Row>
+	</Container>
+
+</div>
+
+
+
+
+
+
 
 
 
@@ -318,6 +369,8 @@ data-aos-once="false"
 
 
 							</div>
+
+
 
 
 
