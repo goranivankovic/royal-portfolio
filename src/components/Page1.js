@@ -142,13 +142,62 @@ export default class Page1 extends Component {
 			<div className="bars">
 				<FaBars  className="h3 text-light" onClick={this.spustiNavBar}/>
 			</div>
-						
-						
-						
-						
+
+			<div className="prviText">
+
+<Container>
+	<Row>
+
+		<Col className="h5 text-light text-center" xs={12} 
+	data-aos="fade-right"
+    data-aos-delay="3000"
+    data-aos-duration="1300"
+    data-aos-easing="ease-out-cubic"
+    data-aos-once="false"
+	 >GORAN IVANKOVIĆ</Col>
+	</Row>
+</Container>
+<br/>
+<br/>
+
+
+<Container>
+	<Row>
+
+		<Col className="h5 text-light text-center glow" xs={12} onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} 
+	data-aos="fade-up"
+    data-aos-delay="1500"
+    data-aos-duration="1300"
+    data-aos-easing="ease-in-out"
+    data-aos-once="false"
+	>Frontend   Developer  and  Designer</Col>
+	</Row>
+</Container>
+<br/>
+<br/>
+
+<Container>
+	<Row>
+		<Col className="text-center" xs={12}>
+		<Button className="btn-sm bg-transparent"
+		data-aos="fade-left"
+		data-aos-delay="3000"
+		data-aos-duration="1300"
+		data-aos-easing="ease-out-cubic"
+		data-aos-once="false"
+		onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>Next</Button>
+		</Col>
+	</Row>
+</Container>
+
+</div>
+
+
+
 						
 						
 													</div>
+												
 
 
 
