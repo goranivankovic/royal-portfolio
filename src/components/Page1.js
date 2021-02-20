@@ -105,7 +105,7 @@ export default class Page1 extends Component {
 							params={{
 								"particles": {
 									"number": {
-										"value": 15
+										"value": 25
 									},
 									"size": {
 										"value": 3
