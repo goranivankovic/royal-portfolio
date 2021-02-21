@@ -128,7 +128,7 @@ export default class Page1 extends Component {
                     <ul>
 					<Link to='/'> <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">HOME</li></Link>
 					<Link to='/about'><li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">ABOUT</li></Link>
-                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">SKILLS</li>
+					<Link to="/skills"><li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">SKILLS</li></Link>
                         <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">PORTFOLIO</li>
                         <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">CONTACT</li>
 
@@ -272,7 +272,7 @@ data-aos-once="false"
    </Anime>  
 
  
-   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="sviNavLinkovi">SKILLS</li> 
+   <Link to="/skills"><li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="sviNavLinkovi">SKILLS</li> </Link>
   
 
    <Anime translateY={[-400,0]} skewY={[80,0]} duration={2000} delay={1800}>

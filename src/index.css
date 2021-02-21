@@ -87,6 +87,8 @@
   cursor: pointer;
 
 }
+
+
 .ri{
   cursor: pointer;
 }
@@ -96,6 +98,19 @@
   top: 25%;
   width: 100%;
   height: 40%;
+  /* background-color: red; */
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+
+
+
+}
+
+.skillText{
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  height: 65%;
   /* background-color: red; */
   font-family: 'Orbitron', sans-serif;
   cursor: pointer;
@@ -164,7 +179,7 @@
   color: azure;
 }
 .bars{
-  position: absolute;
+  position: fixed;
   top: 2%;
   right: 5%;
   z-index: 3;
@@ -236,6 +251,9 @@
   
   
   }
+  #page3navic768{
+    height: 120vh;
+  }
 
 
  
@@ -245,12 +263,16 @@
   .pt{
     font-size: 0.7em;
   }
+  #page3navic768{
+    height: 160vh;
+  }
 
 
 
 
 
 }
+
 
 
 
