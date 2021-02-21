@@ -124,11 +124,11 @@ export default class Page2 extends Component {
 <div className="navBaricMain768">
                 <div className="navicPosition768">
                     <ul>
-                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>HOME</li>
-                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>ABOUT</li>
-                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>SKILLS</li>
-                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>PORTFOLIO</li>
-                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>CONTACT</li>
+                   <Link to="/"> <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">HOME</li></Link>
+				   <Link to="/about"> <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">ABOUT</li></Link>
+                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">SKILLS</li>
+                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">PORTFOLIO</li>
+                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">CONTACT</li>
 
 
 
@@ -271,22 +271,22 @@ data-aos-once="false"
 <div className="navicPosition">
 	<ul>
 <Anime translateY={[-400,0]} skewY={[-30,0]} duration={2000} delay={1300}>
-   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>HOME</li> 
+<Link to="/">  <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">HOME</li></Link>
 	 </Anime>  
 
 	 <Anime translateY={[-400,0]} skewY={[-80,0]} duration={2000} delay={1800}>
- <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="glow">ABOUT</li>
+	 <Link to="/about"> <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="glow sviNavLinkovi">ABOUT</li></Link>
    </Anime>  
 
  
-   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>SKILLS</li> 
+   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">SKILLS</li> 
   
 
    <Anime translateY={[-400,0]} skewY={[80,0]} duration={2000} delay={1800}>
-   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>PORTFOLIO</li>
+   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">PORTFOLIO</li>
    </Anime>
    <Anime translateY={[-400,0]} skewY={[30,0]} duration={2000} delay={1300}>
-   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>CONTACT</li>
+   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">CONTACT</li>
    </Anime>
 
 	</ul>

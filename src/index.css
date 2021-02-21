@@ -217,6 +217,10 @@
   transition: 1200ms;
   transform: scale(0.92);
 }
+.sviNavLinkovi{
+  color: azure;
+
+}
 
 
 @media only screen and (max-width: 768px) {

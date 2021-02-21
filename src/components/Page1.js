@@ -126,11 +126,11 @@ export default class Page1 extends Component {
 <div className="navBaricMain768">
                 <div className="navicPosition768">
                     <ul>
-                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>HOME</li>
-                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>ABOUT</li>
-                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>SKILLS</li>
-                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>PORTFOLIO</li>
-                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>CONTACT</li>
+					<Link to='/'> <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">HOME</li></Link>
+					<Link to='/about'><li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">ABOUT</li></Link>
+                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">SKILLS</li>
+                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">PORTFOLIO</li>
+                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">CONTACT</li>
 
 
 
@@ -155,7 +155,7 @@ export default class Page1 extends Component {
     data-aos-delay="3000"
     data-aos-duration="1300"
     data-aos-easing="ease-out-cubic"
-    data-aos-once="false"
+    data-aos-once="true"
 	 style={imeColor}>GORAN IVANKOVIĆ</Col>
 	</Row>
 </Container>
@@ -171,7 +171,7 @@ export default class Page1 extends Component {
     data-aos-delay="1500"
     data-aos-duration="1300"
     data-aos-easing="ease-in-out"
-    data-aos-once="false"
+    data-aos-once="true"
 	>Frontend   Developer  and  Designer</Col>
 	</Row>
 </Container>
@@ -181,13 +181,13 @@ export default class Page1 extends Component {
 <Container>
 	<Row>
 		<Col className="text-center" xs={12}>
-		<Button className="btn-sm bg-transparent"
+		<Link to='/about'>	<Button className="btn-sm bg-transparent"
 		data-aos="fade-left"
 		data-aos-delay="3000"
 		data-aos-duration="1300"
 		data-aos-easing="ease-out-cubic"
-		data-aos-once="false"
-		onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>Next</Button>
+		data-aos-once="true"
+		onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>Next</Button></Link>
 		</Col>
 	</Row>
 </Container>
@@ -264,22 +264,22 @@ data-aos-once="false"
 <div className="navicPosition">
 	<ul>
 <Anime translateY={[-400,0]} skewY={[-30,0]} duration={2000} delay={1300}>
-   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="glow">HOME</li> 
+ <Link to='/'><li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="glow sviNavLinkovi">HOME</li> </Link>
 	 </Anime>  
 
 	 <Anime translateY={[-400,0]} skewY={[-80,0]} duration={2000} delay={1800}>
- <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>ABOUT</li>
+	 <Link to='/about'><li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="sviNavLinkovi">ABOUT</li></Link>
    </Anime>  
 
  
-   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>SKILLS</li> 
+   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="sviNavLinkovi">SKILLS</li> 
   
 
    <Anime translateY={[-400,0]} skewY={[80,0]} duration={2000} delay={1800}>
-   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>PORTFOLIO</li>
+   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="sviNavLinkovi">PORTFOLIO</li>
    </Anime>
    <Anime translateY={[-400,0]} skewY={[30,0]} duration={2000} delay={1300}>
-   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>CONTACT</li>
+   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="sviNavLinkovi">CONTACT</li>
    </Anime>
 
 	</ul>
@@ -324,13 +324,13 @@ data-aos-once="false"
 <Container>
 	<Row>
 		<Col className="text-center" xs={12}>
-		<Button className="btn-lg bg-transparent"
+	<Link to={'/about'}><Button className="btn-lg bg-transparent"
 		data-aos="fade-left"
 		data-aos-delay="3000"
 		data-aos-duration="1300"
 		data-aos-easing="ease-out-cubic"
 		data-aos-once="false"
-		onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>Next</Button>
+		onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>Next</Button></Link>	
 		</Col>
 	</Row>
 </Container>
