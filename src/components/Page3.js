@@ -271,7 +271,7 @@ export default class Page2 extends Component {
 	
 
 		<Col sm={6} xs={12}>
-   <p className="text-light">
+   <p className="text-light pt">
    HTML 5 / CSS 3 / SCSS / BOOTSTRAP<br></br>
    JAVASCRIPT / ES6, ES7, ES8<br></br>
 
@@ -283,7 +283,7 @@ export default class Page2 extends Component {
 
 		</Col>
 		<Col sm={6} xs={12}>
-   <p className="text-light">
+   <p className="text-light pt">
   NODEJS / EXPRESS<br></br>
     Mongo.DB / GITHUB <br></br>
 
