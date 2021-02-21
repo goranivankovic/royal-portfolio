@@ -261,7 +261,7 @@ export default class Page2 extends Component {
 	data-aos-delay="1500"
 	data-aos-duration="1300"
 	data-aos-easing="ease-out-cubic"
-	data-aos-once="false"
+	data-aos-once="true"
 	>TECHNICAL SKILLS</h6> </Col>
 	</Row>
 </Container>
