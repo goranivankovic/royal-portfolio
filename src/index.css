@@ -37,6 +37,7 @@
   width: 60%;
   height: 100%;
   opacity: 0.8;
+  z-index: 3;
 
  
 
@@ -198,10 +199,11 @@
 }
 .bars{
   position: absolute;
-  top: 2%;
+  top: 2vh;
   right: 5%;
   z-index: 3;
 }
+
 
 .footer{
   position: absolute;
@@ -293,7 +295,9 @@
   }
 
 
-  
+  .btnZ{
+    z-index: 10;
+  }
 
 
  

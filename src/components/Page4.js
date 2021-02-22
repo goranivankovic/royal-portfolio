@@ -136,8 +136,8 @@ export default class Page4 extends Component {
                    <Link to="/"> <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">HOME</li></Link>
 				   <Link to="/about"> <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">ABOUT</li></Link>
 				   <Link to="/skills">     <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">SKILLS</li></Link>
-                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">PORTFOLIO</li>
-                        <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">CONTACT</li>
+				   <Link to="/portfolio">   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">PORTFOLIO</li></Link>
+                   <Link to="/contact"><li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">CONTACT</li></Link>
 
 
 
@@ -178,13 +178,13 @@ export default class Page4 extends Component {
        <p>Web Apps</p>
 
     </Col>
-    <Col sm={4} xs={10} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+    <Col sm={4} xs={12} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
         <img src={movies} className="slike" alt=""/>
     </Col>
-    <Col sm={4} xs={10} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+    <Col sm={4} xs={12} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
         <img src={weather} className="slike" alt=""/>
     </Col>
-    <Col sm={4} xs={10} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+    <Col sm={4} xs={12} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
         <img src={covid} className="slike" alt=""/>
     </Col>
 	</Row>
@@ -199,13 +199,13 @@ export default class Page4 extends Component {
        <p>Web Sites</p>
 
     </Col>
-    <Col sm={4} xs={10} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+    <Col sm={4} xs={12} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
         <img src={restorant} className="slike" alt=""/>
     </Col>
-    <Col sm={4} xs={10} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+    <Col sm={4} xs={12} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
         <img src={body} className="slike" alt=""/>
     </Col>
-    <Col sm={4} xs={10} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+    <Col sm={4} xs={12} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
         <img src={coding} className="slike" alt=""/>
     </Col>
 	</Row>
@@ -221,13 +221,13 @@ export default class Page4 extends Component {
        <p>Web Games</p>
 
     </Col>
-    <Col sm={4} xs={10} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+    <Col sm={4} xs={12} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
         <img src={quiz} className="slike" alt=""/>
     </Col>
-    <Col sm={4} xs={10}  className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+    <Col sm={4} xs={12}  className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
         <img src={rps} className="slike" alt=""/>
     </Col>
-    <Col sm={4} xs={10} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+    <Col sm={4} xs={12} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
         <img src={puzzle} className="slike" alt=""/>
     </Col>
 	</Row>
@@ -238,7 +238,7 @@ export default class Page4 extends Component {
 <Container>
 	<Row>
 		<Col className="text-center" xs={12}>
-	<Link to="/skills"><Button className="btn-sm bg-transparent"
+	<Link to="/contact"><Button className="btn-sm bg-transparent btnZ"
 		data-aos="fade-left"
 		data-aos-delay="2000"
 		data-aos-duration="1300"
@@ -334,10 +334,10 @@ data-aos-once="false"
   
 
    <Anime translateY={[-400,0]} skewY={[80,0]} duration={2000} delay={1800}>
-   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="glow sviNavLinkovi">PORTFOLIO</li>
+   <Link to="/portfolio">  <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="glow sviNavLinkovi">PORTFOLIO</li></Link>
    </Anime>
    <Anime translateY={[-400,0]} skewY={[30,0]} duration={2000} delay={1300}>
-   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">CONTACT</li>
+   <Link to="/contact">  <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">CONTACT</li></Link>
    </Anime>
 
 	</ul>
@@ -377,10 +377,10 @@ data-aos-once="false"
     </Col>
 
     <Col sm={4} xs={12} onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={weather} className="slike" alt=""/>
+	<a href="https://royal-weather.netlify.app/" >    <img src={weather} className="slike" alt=""/></a>
     </Col>
     <Col sm={4} xs={12} onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={covid} className="slike" alt=""/>
+	<a href="https://covid19-app-react.netlify.app/" ><img src={covid} className="slike" alt=""/></a>
     </Col>
 	</Row>
 </Container> 
@@ -395,13 +395,13 @@ data-aos-once="false"
 
     </Col>
     <Col sm={4} xs={12}  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={restorant} className="slike" alt=""/>
+	<a href="https://royal-food.netlify.app/" >   <img src={restorant} className="slike" alt=""/></a>
     </Col>
     <Col sm={4} xs={12}  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={body} className="slike" alt=""/>
+	<a href="https://royal-fit.netlify.app/" ><img src={body} className="slike" alt=""/></a>
     </Col>
     <Col sm={4} xs={12}  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={coding} className="slike" alt=""/>
+	<a href="https://gmi-computing.netlify.app/" ><img src={coding} className="slike" alt=""/></a>
     </Col>
 	</Row>
 </Container> 
@@ -417,13 +417,13 @@ data-aos-once="false"
 
     </Col>
     <Col sm={4} xs={12}  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={quiz} className="slike" alt=""/>
+	<a href="https://royal-quiz.netlify.app/" >  <img src={quiz} className="slike" alt=""/></a>
     </Col>
     <Col sm={4} xs={12}  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={rps} className="slike" alt=""/>
+	<a href="https://royal-rps.netlify.app/" >  <img src={rps} className="slike" alt=""/></a>
     </Col>
     <Col sm={4} xs={12}  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={puzzle} className="slike" alt=""/>
+	<a href="https://goranivankovic.github.io/puzzle/" > <img src={puzzle} className="slike" alt=""/></a>
     </Col>
 	</Row>
 </Container> 
@@ -433,7 +433,7 @@ data-aos-once="false"
 <Container>
 	<Row>
 		<Col className="text-center" xs={12}>
-	<Link to="/skills"><Button className="btn-lg bg-transparent"
+	<Link to="/contact"><Button className="btn-lg bg-transparent"
 		data-aos="fade-left"
 		data-aos-delay="2000"
 		data-aos-duration="1300"
