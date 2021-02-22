@@ -175,7 +175,7 @@ export default class Page4 extends Component {
 
 		<Col className="h6 text-light" xs={12}> 
 
-       <p>Web Apps</p>
+       <p className="pt">Web Apps</p>
 
     </Col>
     <Col sm={4} xs={12} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
@@ -196,7 +196,7 @@ export default class Page4 extends Component {
 
 		<Col className="h6 text-light" xs={12}> 
 
-       <p>Web Sites</p>
+       <p className="pt">Web Sites</p>
 
     </Col>
     <Col sm={4} xs={12} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
@@ -218,7 +218,7 @@ export default class Page4 extends Component {
 
 		<Col className="h6 text-light" xs={12}> 
 
-       <p>Web Games</p>
+       <p className="pt">Web Games</p>
 
     </Col>
     <Col sm={4} xs={12} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>

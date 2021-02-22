@@ -208,7 +208,7 @@ export default class Page5 extends Component {
 		
 
 <div className="footer">
-	<Container className="footerCon">
+	<Container>
 		<Row className="footerConRow">
 			<Col md={5} sm={8}  xs={12} className="text-center text-light footerColona">
 		 
