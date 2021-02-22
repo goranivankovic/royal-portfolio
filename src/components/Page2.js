@@ -190,7 +190,7 @@ Love  to learn new technologies,and make  unique ui/ux designs.
 		<Col className="text-center" xs={12}>
 		<Link to="/skills"><Button className="btn-sm bg-transparent"
 		data-aos="fade-left"
-		data-aos-delay="3000"
+		data-aos-delay="2000"
 		data-aos-duration="1300"
 		data-aos-easing="ease-out-cubic"
 		data-aos-once="true"

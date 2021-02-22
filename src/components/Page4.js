@@ -159,10 +159,10 @@ export default class Page4 extends Component {
 
 		<Col className="h2 text-center" xs={12} 
 	data-aos="fade-right"
-    data-aos-delay="3000"
+    data-aos-delay="2000"
     data-aos-duration="1300"
     data-aos-easing="ease-out-cubic"
-    data-aos-once="false"
+    data-aos-once="true"
 	 style={imeColor}>PORTFOLIO</Col>
 	</Row>
 </Container>

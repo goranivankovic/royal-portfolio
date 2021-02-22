@@ -209,7 +209,7 @@ export default class Page2 extends Component {
 
 
 <Container>
-	<Row className="footerConRow">
+	<Row >
 		<Col sm={10} xs={12}>
 			<p className="text-light">HTML</p>
 			<ProgressBar title={'Html'}  now={this.state.html0} animated label={this.state.html0 +' %'}/>
@@ -225,7 +225,7 @@ export default class Page2 extends Component {
 
 
 <Container>
-	<Row className="footerConRow">
+	<Row >
 		<Col sm={10} xs={12}>
 			<p className="text-light">RESPONSIVE DESIGN</p>
 			<ProgressBar title={'Responsive'} now={this.state.rd0} animated label={this.state.rd0 +' %'}/>
@@ -241,7 +241,7 @@ export default class Page2 extends Component {
 
 
 <Container>
-	<Row className="footerConRow">
+	<Row>
 		<Col sm={10} xs={12}>
 			<p className="text-light">REACT</p>
 			<ProgressBar title={'React'}  now={this.state.react0} animated label={this.state.react0 +' %'}/>
@@ -305,7 +305,7 @@ export default class Page2 extends Component {
 		<Col className="text-center" xs={12}>
 		<Link to="/portfolio">	<Button className="btn-sm bg-transparent"
 		data-aos="fade-left"
-		data-aos-delay="3000"
+		data-aos-delay="2000"
 		data-aos-duration="1300"
 		data-aos-easing="ease-out-cubic"
 		data-aos-once="true"

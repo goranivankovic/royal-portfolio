@@ -5,17 +5,14 @@ import Media from "react-media"
 import Particles from 'react-particles-js';
 import NavBaric from './NavBaric';
 import { FaBars,FaLinkedin,FaYoutube,FaGithub,FaFacebook } from 'react-icons/fa'
-import { Container, Row,Col,Button } from 'react-bootstrap';
+import { Container, Row,Col,Button,Form, FormGroup, FormControl, FormLabel} from 'react-bootstrap';
 import {Link } from 'react-router-dom'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
-
-
-
-export default class Page1 extends Component {
+export default class Page5 extends Component {
     constructor(){
         super()
         this.state={
@@ -145,54 +142,70 @@ export default class Page1 extends Component {
 				<FaBars  className="h3 text-light" onClick={this.spustiNavBar}/>
 			</div>
 
-			<div className="prviText">
+            
+<div className="contactText">
+
+
+<br/>
+
 
 <Container>
 	<Row>
-
-		<Col className="h5 text-center" xs={12} 
+    <Col className="h6 text-center" xs={12} 
 	data-aos="fade-right"
     data-aos-delay="3000"
     data-aos-duration="1300"
     data-aos-easing="ease-out-cubic"
-    data-aos-once="true"
-	 style={imeColor}>GORAN IVANKOVIĆ</Col>
-	</Row>
-</Container>
-<br/>
-<br/>
+    data-aos-once="false"
+	 style={imeColor} >CONTACT</Col>
 
-
-<Container>
-	<Row>
-
-		<Col className="h5 text-light text-center" xs={12} onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} 
+		<Col className=" text-light text-center" xs={12} 
 	data-aos="fade-up"
     data-aos-delay="1500"
     data-aos-duration="1300"
     data-aos-easing="ease-in-out"
-    data-aos-once="true"
-	>Frontend   Developer  and  Designer</Col>
+    data-aos-once="false"
+	>
+          <Form>
+              <FormGroup>
+                  <FormLabel className="float-left pt">Email</FormLabel>
+                  <FormControl type="email" placeholder="Enter a Email..." required={true} />
+
+              </FormGroup>
+
+                    <Form.Group controlId="exampleForm.ControlTextarea1">
+                    <FormLabel className="float-left pt">Message</FormLabel>
+                        
+                        <Form.Control as="textarea" placeholder="Send Message..." rows="6" name="address"/>
+                    </Form.Group>
+                    <Button className="float-right btn-sm"> Send</Button>
+                </Form>
+
+    </Col>
 	</Row>
 </Container>
-<br/>
+
 <br/>
 
 <Container>
 	<Row>
 		<Col className="text-center" xs={12}>
-		<Link to='/about'>	<Button className="btn-sm bg-transparent"
+	<Link to='/'><Button className="btn-sm bg-transparent"
 		data-aos="fade-left"
 		data-aos-delay="2000"
 		data-aos-duration="1300"
 		data-aos-easing="ease-out-cubic"
 		data-aos-once="true"
-		onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>Next</Button></Link>
+		onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>Next</Button></Link>	
 		</Col>
 	</Row>
 </Container>
 
 </div>
+
+
+
+		
 
 <div className="footer">
 	<Container className="footerCon">
@@ -264,7 +277,7 @@ data-aos-once="false"
 <div className="navicPosition">
 	<ul>
 <Anime translateY={[-400,0]} skewY={[-30,0]} duration={2000} delay={1300}>
- <Link to='/'><li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="glow sviNavLinkovi">HOME</li> </Link>
+ <Link to='/'><li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="sviNavLinkovi">HOME</li> </Link>
 	 </Anime>  
 
 	 <Anime translateY={[-400,0]} skewY={[-80,0]} duration={2000} delay={1800}>
@@ -279,7 +292,7 @@ data-aos-once="false"
    <Link to="/portfolio"><li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="sviNavLinkovi">PORTFOLIO</li></Link>
    </Anime>
     <Anime translateY={[-400,0]} skewY={[30,0]} duration={2000} delay={1300}>
-  <Link to="/contact">  <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="sviNavLinkovi">CONTACT</li></Link>
+  <Link to="/contact">  <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="glow sviNavLinkovi">CONTACT</li></Link>
    </Anime>
 
 	</ul>
@@ -288,45 +301,56 @@ data-aos-once="false"
 
 
 </div>
-<div className="prviText">
+
+<div className="contactText">
+
+<br/>
+
 
 <Container>
-	<Row>
+	<Row className="footerConRow">
 
-		<Col className="h2 text-light text-center" xs={12} 
+    <Col className="h2 text-center" xs={12} 
 	data-aos="fade-right"
     data-aos-delay="3000"
     data-aos-duration="1300"
     data-aos-easing="ease-out-cubic"
     data-aos-once="false"
-	 >GORAN IVANKOVIĆ</Col>
-	</Row>
-</Container>
-<br/>
-<br/>
+	 style={imeColor} >CONTACT</Col>
 
-
-<Container>
-	<Row>
-
-		<Col className="h2 text-light text-center glow" xs={12} onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} 
+		<Col className=" text-light text-center" xs={8} 
 	data-aos="fade-up"
     data-aos-delay="1500"
     data-aos-duration="1300"
     data-aos-easing="ease-in-out"
     data-aos-once="false"
-	>Frontend   Developer  and  Designer</Col>
+	>
+          <Form>
+              <FormGroup>
+                  <FormLabel className="float-left">Email</FormLabel>
+                  <FormControl type="email" placeholder="Enter a Email..." />
+
+              </FormGroup>
+
+                    <Form.Group controlId="exampleForm.ControlTextarea1">
+                    <FormLabel className="float-left">Message</FormLabel>
+                        
+                        <Form.Control as="textarea" placeholder="Send Message..." rows="6" name="address"/>
+                    </Form.Group>
+                    <Button className="float-right"> Send</Button>
+                </Form>
+
+    </Col>
 	</Row>
 </Container>
-<br/>
 <br/>
 
 <Container>
 	<Row>
 		<Col className="text-center" xs={12}>
-	<Link to={'/about'}><Button className="btn-lg bg-transparent"
+	<Link to='/'><Button className="btn-lg bg-transparent"
 		data-aos="fade-left"
-		data-aos-delay="3000"
+		data-aos-delay="2000"
 		data-aos-duration="1300"
 		data-aos-easing="ease-out-cubic"
 		data-aos-once="false"
@@ -389,4 +413,8 @@ data-aos-once="false"
             
         )
     }
+
+
+
+ 
 }
