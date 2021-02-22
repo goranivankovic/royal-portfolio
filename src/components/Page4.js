@@ -10,6 +10,15 @@ import {Link } from 'react-router-dom'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import movies from '../img/movies.jpeg'
+import weather from '../img/weather.jpeg'
+import covid from '../img/covid.jpeg'
+import restorant from '../img/restorant.jpeg'
+import body from '../img/body.jpeg'
+import coding from '../img/coding.jpg'
+import quiz from '../img/quiz.jpeg'
+import rps from '../img/rps.jpg'
+import puzzle from '../img/puzzle.jpeg'
 
 export default class Page4 extends Component {
     constructor(){
@@ -40,7 +49,7 @@ export default class Page4 extends Component {
     }
 
     mousOutLi(b){
-        b.target.style.opacity='0.8'
+        b.target.style.opacity='1'
         b.target.style.color='azure'
         b.target.style.transform='scale(1)'
         b.target.style.transition='1000ms'
@@ -50,12 +59,12 @@ export default class Page4 extends Component {
 
 	spustiNavBar(e){
 		const navBaricMain768 =document.querySelector('.navBaricMain768')
-        const aboutTextpravitext =document.querySelector('.aboutTextpravitext');
+      
 
 		if(this.state.laz && e.button=='0'){
 		  
 			navBaricMain768.style.display='flex'
-            aboutTextpravitext.style.opacity='0'
+         
 
 			this.setState({
 				laz:false
@@ -65,7 +74,7 @@ export default class Page4 extends Component {
 
 		}else if(!this.state.laz && e.button=='0'){
 			navBaricMain768.style.display='none'
-            aboutTextpravitext.style.opacity='1'
+      
 
 
 			this.setState({
@@ -74,6 +83,7 @@ export default class Page4 extends Component {
 
 		}
 		
+
 
 	}
 
@@ -97,10 +107,10 @@ export default class Page4 extends Component {
                     {matches =>
                       matches ? (
 
-						<div className="navicMainDiv768">
+						<div className="navicMainDiv768" id="navicMainDivpage4">
 
 								
-						<Particles className="particles"
+						<Particles className="particles" id="particalesPage4"
 							params={{
 								"particles": {
 									"number": {
@@ -142,18 +152,18 @@ export default class Page4 extends Component {
 				<FaBars  className="h3 text-light" onClick={this.spustiNavBar}/>
 			</div>
 
-			<div className="aboutText">
-
-<Container className="aboutTextpravitext">
+            <div className="portfolioText" >
+ 
+<Container>
 	<Row>
 
-		<Col className="h5 text-center" xs={12} 
+		<Col className="h2 text-center" xs={12} 
 	data-aos="fade-right"
     data-aos-delay="3000"
     data-aos-duration="1300"
     data-aos-easing="ease-out-cubic"
-    data-aos-once="true"
-	 style={imeColor}>ABOUT</Col>
+    data-aos-once="false"
+	 style={imeColor}>PORTFOLIO</Col>
 	</Row>
 </Container>
 <br/>
@@ -163,45 +173,87 @@ export default class Page4 extends Component {
 <Container>
 	<Row className="footerConRow">
 
-		<Col className="pt text-light text-center" xs={12} 
-	data-aos="fade-up"
-    data-aos-delay="1500"
-    data-aos-duration="1300"
-    data-aos-easing="ease-in-out"
-    data-aos-once="false"
-	>
-        Hello everyone <br></br>
-My name is Goran Ivankovic i am self taught Programmer and Designer.
-I enjoy creating fully responsive websites with user friendly web experiences, and deliver highly accurate products that meet quality standard.
-Love  to learn new technologies,and make  unique ui/ux designs.
+		<Col className="h6 text-light" xs={12}> 
 
+       <p>Web Apps</p>
 
-      
-   
+    </Col>
+    <Col sm={4} xs={10} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={movies} className="slike" alt=""/>
+    </Col>
+    <Col sm={4} xs={10} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={weather} className="slike" alt=""/>
+    </Col>
+    <Col sm={4} xs={10} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={covid} className="slike" alt=""/>
     </Col>
 	</Row>
-</Container>
+</Container> 
+<br/>
+
+<Container>
+	<Row className="footerConRow">
+
+		<Col className="h6 text-light" xs={12}> 
+
+       <p>Web Sites</p>
+
+    </Col>
+    <Col sm={4} xs={10} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={restorant} className="slike" alt=""/>
+    </Col>
+    <Col sm={4} xs={10} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={body} className="slike" alt=""/>
+    </Col>
+    <Col sm={4} xs={10} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={coding} className="slike" alt=""/>
+    </Col>
+	</Row>
+</Container> 
+<br/>
+<br/>
+
+<Container>
+	<Row className="footerConRow">
+
+		<Col className="h6 text-light" xs={12}> 
+
+       <p>Web Games</p>
+
+    </Col>
+    <Col sm={4} xs={10} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={quiz} className="slike" alt=""/>
+    </Col>
+    <Col sm={4} xs={10}  className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={rps} className="slike" alt=""/>
+    </Col>
+    <Col sm={4} xs={10} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={puzzle} className="slike" alt=""/>
+    </Col>
+	</Row>
+</Container> 
 <br/>
 <br/>
 
 <Container>
 	<Row>
 		<Col className="text-center" xs={12}>
-		<Link to="/skills"><Button className="btn-sm bg-transparent"
+	<Link to="/skills"><Button className="btn-sm bg-transparent"
 		data-aos="fade-left"
-		data-aos-delay="3000"
+		data-aos-delay="2000"
 		data-aos-duration="1300"
 		data-aos-easing="ease-out-cubic"
-		data-aos-once="true"
+		data-aos-once="false"
 		onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>Next</Button></Link>
 		</Col>
 	</Row>
 </Container>
 
+
 </div>
 
 <div className="footer">
-	<Container className="footerCon">
+	<Container>
 		<Row className="footerConRow">
 			<Col md={5} sm={8}  xs={12} className="text-center text-light footerColona">
 		 
@@ -234,10 +286,10 @@ Love  to learn new technologies,and make  unique ui/ux designs.
 
                  
                         ) : (
-							<div className="navicMainDiv">
+							<div className="navicMainDiv" id="navicMainDivpage4">
 
 								
-<Particles className="particles"
+<Particles className="particles" id="particalesPage4"
     params={{
 	    "particles": {
 	        "number": {
@@ -274,7 +326,7 @@ data-aos-once="false"
 	 </Anime>  
 
 	 <Anime translateY={[-400,0]} skewY={[-80,0]} duration={2000} delay={1800}>
-	 <Link to="/about"> <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="glow sviNavLinkovi">ABOUT</li></Link>
+	 <Link to="/about"> <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} className="sviNavLinkovi">ABOUT</li></Link>
    </Anime>  
 
  
@@ -282,7 +334,7 @@ data-aos-once="false"
   
 
    <Anime translateY={[-400,0]} skewY={[80,0]} duration={2000} delay={1800}>
-   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">PORTFOLIO</li>
+   <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="glow sviNavLinkovi">PORTFOLIO</li>
    </Anime>
    <Anime translateY={[-400,0]} skewY={[30,0]} duration={2000} delay={1300}>
    <li onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}  className="sviNavLinkovi">CONTACT</li>
@@ -294,7 +346,7 @@ data-aos-once="false"
 
 
 </div>
-<div className="aboutText">
+<div className="portfolioText">
  
 <Container>
 	<Row>
@@ -305,7 +357,7 @@ data-aos-once="false"
     data-aos-duration="1300"
     data-aos-easing="ease-out-cubic"
     data-aos-once="false"
-	 style={imeColor}>ABOUT</Col>
+	 style={imeColor}>PORTFOLIO</Col>
 	</Row>
 </Container>
 <br/>
@@ -315,20 +367,63 @@ data-aos-once="false"
 <Container>
 	<Row className="footerConRow">
 
-		<Col className="h6 text-light  text-center" xs={6} onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi} 
-	data-aos="fade-up"
-    data-aos-delay="1500"
-    data-aos-duration="1300"
-    data-aos-easing="ease-in-out"
-    data-aos-once="false"
-	>
-        Hello everyone <br></br>
-My name is Goran Ivankovic i am self taught Programmer and Designer.
-I enjoy creating fully responsive websites with user friendly web experiences, and deliver highly accurate products that meet quality standard.
-Love  to learn new technologies,and make  unique ui/ux designs.
+		<Col className="h6 text-light" xs={12}> 
 
-      
+       <h5>Web Apps</h5>
 
+    </Col>
+     <Col sm={4} xs={12} onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+	 <a href="https://react-movie-app-goga.netlify.app/" > <img src={movies} className="slike" alt=""/></a>
+    </Col>
+
+    <Col sm={4} xs={12} onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={weather} className="slike" alt=""/>
+    </Col>
+    <Col sm={4} xs={12} onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={covid} className="slike" alt=""/>
+    </Col>
+	</Row>
+</Container> 
+<br/>
+
+<Container>
+	<Row className="footerConRow">
+
+		<Col className="h6 text-light" xs={12}> 
+
+       <h5>Web Sites</h5>
+
+    </Col>
+    <Col sm={4} xs={12}  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={restorant} className="slike" alt=""/>
+    </Col>
+    <Col sm={4} xs={12}  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={body} className="slike" alt=""/>
+    </Col>
+    <Col sm={4} xs={12}  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={coding} className="slike" alt=""/>
+    </Col>
+	</Row>
+</Container> 
+<br/>
+<br/>
+
+<Container>
+	<Row className="footerConRow">
+
+		<Col className="h6 text-light" xs={12}> 
+
+       <h5>Web Games</h5>
+
+    </Col>
+    <Col sm={4} xs={12}  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={quiz} className="slike" alt=""/>
+    </Col>
+    <Col sm={4} xs={12}  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={rps} className="slike" alt=""/>
+    </Col>
+    <Col sm={4} xs={12}  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
+        <img src={puzzle} className="slike" alt=""/>
     </Col>
 	</Row>
 </Container> 
@@ -340,7 +435,7 @@ Love  to learn new technologies,and make  unique ui/ux designs.
 		<Col className="text-center" xs={12}>
 	<Link to="/skills"><Button className="btn-lg bg-transparent"
 		data-aos="fade-left"
-		data-aos-delay="3000"
+		data-aos-delay="2000"
 		data-aos-duration="1300"
 		data-aos-easing="ease-out-cubic"
 		data-aos-once="false"
@@ -352,7 +447,7 @@ Love  to learn new technologies,and make  unique ui/ux designs.
 
 </div>
 <div className="footer">
-	<Container className="footerCon">
+	<Container>
 		<Row className="footerConRow">
 			<Col xs={5} className="text-center text-light footerColona">
 		 
