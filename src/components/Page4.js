@@ -157,7 +157,7 @@ export default class Page4 extends Component {
 <Container>
 	<Row>
 
-		<Col className="h2 text-center" xs={12} 
+		<Col className="h6 text-center" xs={12} 
 	data-aos="fade-right"
     data-aos-delay="2000"
     data-aos-duration="1300"

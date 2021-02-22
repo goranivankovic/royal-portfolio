@@ -148,7 +148,7 @@ export default class Page2 extends Component {
 <Container className="aboutTextpravitext">
 	<Row>
 
-		<Col className="h5 text-center" xs={12} 
+		<Col className="h6 text-center" xs={12} 
 	data-aos="fade-right"
     data-aos-delay="3000"
     data-aos-duration="1300"
