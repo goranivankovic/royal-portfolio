@@ -7,9 +7,11 @@ import NavBaric from './NavBaric';
 import { FaBars,FaLinkedin,FaYoutube,FaGithub,FaFacebook } from 'react-icons/fa'
 import { Container, Row,Col,Button,Form, FormGroup, FormControl, FormLabel} from 'react-bootstrap';
 import {Link } from 'react-router-dom'
+import emailjs from 'emailjs-com';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 
 
 export default class Page5 extends Component {
@@ -17,12 +19,15 @@ export default class Page5 extends Component {
         super()
         this.state={
 			broj:0,
-			laz:false
+			laz:false,
+			email:'',
+			message:''
            
         }
 		this.mouseOnLi=this.mouseOnLi.bind(this)
         this.mousOutLi=this.mousOutLi.bind(this)
 		this.spustiNavBar=this.spustiNavBar.bind(this)
+		this.sendEmailAndMessage=this.sendEmailAndMessage.bind(this)
     }
 
 	componentDidMount(){
@@ -30,6 +35,29 @@ export default class Page5 extends Component {
 			laz:true
 		})
 	}
+
+	
+
+	sendEmailAndMessage(p){
+		p.preventDefault();
+
+		
+	
+		emailjs.sendForm('gmail', 'template_fm2n13w',p.target,'user_CUPedB8OkkfuUfSRyzgAo')
+		.then((result) => {
+			console.log(result.text);
+		}, (error) => {
+			console.log(error.text);
+		});
+		p.target.reset()
+
+	}
+
+
+
+
+
+	
 
 
 
@@ -84,6 +112,7 @@ export default class Page5 extends Component {
 			color:'#ffa500'
 
 		}
+	
 
 
        
@@ -166,19 +195,19 @@ export default class Page5 extends Component {
     data-aos-easing="ease-in-out"
     data-aos-once="false"
 	>
-          <Form>
+          <Form onSubmit={this.sendEmailAndMessage}>
               <FormGroup>
                   <FormLabel className="float-left pt">Email</FormLabel>
-                  <FormControl type="email" placeholder="Enter a Email..." required={true} />
+                  <FormControl type="email" name="email" placeholder="Enter a Email..." required={true}  />
 
               </FormGroup>
 
                     <Form.Group controlId="exampleForm.ControlTextarea1">
                     <FormLabel className="float-left pt">Message</FormLabel>
                         
-                        <Form.Control as="textarea" placeholder="Send Message..." rows="6" name="address"/>
+                        <Form.Control as="textarea" placeholder="Send Message..." rows="6" name="message"/>
                     </Form.Group>
-                    <Button className="float-right btn-sm"> Send</Button>
+                    <Button className="float-right btn-sm" type="submit"> Send</Button>
                 </Form>
 
     </Col>
@@ -325,19 +354,19 @@ data-aos-once="false"
     data-aos-easing="ease-in-out"
     data-aos-once="false"
 	>
-          <Form>
+          <Form onSubmit={this.sendEmailAndMessage}>
               <FormGroup>
-                  <FormLabel className="float-left">Email</FormLabel>
-                  <FormControl type="email" placeholder="Enter a Email..." />
+                  <FormLabel className="float-left" >Email</FormLabel>
+                  <FormControl type="email" placeholder="Enter a Email..." name="email" />
 
               </FormGroup>
 
-                    <Form.Group controlId="exampleForm.ControlTextarea1">
+                    <Form.Group>
                     <FormLabel className="float-left">Message</FormLabel>
                         
-                        <Form.Control as="textarea" placeholder="Send Message..." rows="6" name="address"/>
+                        <FormControl  name="message" as="textarea" placeholder="Send Message..." rows="6"/>
                     </Form.Group>
-                    <Button className="float-right"> Send</Button>
+                    <Button className="float-right" type="submit">Send</Button>
                 </Form>
 
     </Col>
