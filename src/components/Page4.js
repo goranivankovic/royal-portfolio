@@ -171,7 +171,7 @@ export default class Page4 extends Component {
 
 
 <Container>
-	<Row className="footerConRow">
+	<Row>
 
 		<Col className="h6 text-light" xs={12}> 
 
@@ -179,20 +179,20 @@ export default class Page4 extends Component {
 
     </Col>
     <Col sm={4} xs={12} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={movies} className="slike" alt=""/>
+     <a href="https://react-movie-app-goga.netlify.app/"><img src={movies} className="slike" alt=""/></a>  
     </Col>
     <Col sm={4} xs={12} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={weather} className="slike" alt=""/>
+      <a href="https://royal-weather.netlify.app/"><img src={weather} className="slike" alt=""/></a>  
     </Col>
     <Col sm={4} xs={12} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={covid} className="slike" alt=""/>
+      <a href="https://covid19-app-react.netlify.app/"><img src={covid} className="slike" alt=""/></a>  
     </Col>
 	</Row>
 </Container> 
 <br/>
 
 <Container>
-	<Row className="footerConRow">
+	<Row>
 
 		<Col className="h6 text-light" xs={12}> 
 
@@ -200,13 +200,13 @@ export default class Page4 extends Component {
 
     </Col>
     <Col sm={4} xs={12} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={restorant} className="slike" alt=""/>
+      <a href="https://royal-food.netlify.app/"><img src={restorant} className="slike" alt=""/></a>  
     </Col>
     <Col sm={4} xs={12} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={body} className="slike" alt=""/>
+       <a href="https://royal-fit.netlify.app/"><img src={body} className="slike" alt=""/></a> 
     </Col>
     <Col sm={4} xs={12} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={coding} className="slike" alt=""/>
+      <a href="https://gmi-computing.netlify.app/"><img src={coding} className="slike" alt=""/></a>  
     </Col>
 	</Row>
 </Container> 
@@ -214,7 +214,7 @@ export default class Page4 extends Component {
 <br/>
 
 <Container>
-	<Row className="footerConRow">
+	<Row>
 
 		<Col className="h6 text-light" xs={12}> 
 
@@ -222,13 +222,13 @@ export default class Page4 extends Component {
 
     </Col>
     <Col sm={4} xs={12} className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={quiz} className="slike" alt=""/>
+       <a href="https://royal-quiz.netlify.app/"><img src={quiz} className="slike" alt=""/></a> 
     </Col>
     <Col sm={4} xs={12}  className="pad10" onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={rps} className="slike" alt=""/>
+      <a href="https://royal-rps.netlify.app/"><img src={rps} className="slike" alt=""/></a>  
     </Col>
     <Col sm={4} xs={12} className="pad10"  onMouseOver={this.mouseOnLi} onMouseOut={this.mousOutLi}>
-        <img src={puzzle} className="slike" alt=""/>
+       <a href="https://goranivankovic.github.io/puzzle/"><img src={puzzle} className="slike" alt=""/></a> 
     </Col>
 	</Row>
 </Container> 

@@ -152,6 +152,7 @@
   height: 100vh;
   width: 100%;
   background-color: #333333;
+  
 }
 
 
@@ -295,10 +296,6 @@
   }
 
 
-  .btnZ{
-    z-index: 10;
-  }
-
 
  
 }
@@ -319,12 +316,43 @@
 
 @media only screen and (max-width: 575px){
   #navicMainDivpage4{
-    height: 385vh;
+    height: 355vh;
     width: 100%;
   }
   #particalesPage4{
-    height: 385vh;
+    height: 355vh;
     width: 100%;
+  }
+  .portfolioText{
+    position: absolute;
+    top: 8%;
+    width: 100%;
+    height: 65%;
+    /* background-color: red; */
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+  
+  
+  
+  }
+
+  .footer{
+    position: absolute;
+    bottom:0%;
+    width: 100%;
+    height: 5%;
+    z-index: 2;
+    display:flex;
+    align-items: center;
+  
+  
+  
+  }
+
+
+
+  .btnZ{
+    z-index: 10;
   }
 
 
