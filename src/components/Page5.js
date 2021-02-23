@@ -196,6 +196,18 @@ export default class Page5 extends Component {
     data-aos-once="false"
 	>
           <Form onSubmit={this.sendEmailAndMessage}>
+		  <FormGroup>
+		  <Form.Text className="text-light text-left pt">
+  goranivankovic87@gmail.com
+    </Form.Text>
+	<br></br>
+	<Form.Text className="text-light text-left pt">
+  +381/064/415-68-13
+    </Form.Text>
+
+	</FormGroup>
+		
+
               <FormGroup>
                   <FormLabel className="float-left pt">Email</FormLabel>
                   <FormControl type="email" name="email" placeholder="Enter a Email..." required={true}  />
@@ -207,7 +219,7 @@ export default class Page5 extends Component {
                         
                         <Form.Control as="textarea" placeholder="Send Message..." rows="6" name="message"/>
                     </Form.Group>
-                    <Button className="float-right btn-sm" type="submit"> Send</Button>
+                    <Button className="float-left btn-sm" type="submit"> Send</Button>
                 </Form>
 
     </Col>
@@ -355,6 +367,19 @@ data-aos-once="false"
     data-aos-once="false"
 	>
           <Form onSubmit={this.sendEmailAndMessage}>
+			  <FormGroup>
+		  <Form.Text className="text-light text-left h6">
+  goranivankovic87@gmail.com
+    </Form.Text>
+	<br></br>
+	<Form.Text className="text-light text-left h6">
+  +381/064/415-68-13
+    </Form.Text>
+
+	</FormGroup>
+            
+
+
               <FormGroup>
                   <FormLabel className="float-left" >Email</FormLabel>
                   <FormControl type="email" placeholder="Enter a Email..." name="email" />
@@ -364,9 +389,9 @@ data-aos-once="false"
                     <Form.Group>
                     <FormLabel className="float-left">Message</FormLabel>
                         
-                        <FormControl  name="message" as="textarea" placeholder="Send Message..." rows="6"/>
+                        <FormControl  name="message" as="textarea" placeholder="Send Message..." rows="5"/>
                     </Form.Group>
-                    <Button className="float-right" type="submit">Send</Button>
+                    <Button className="float-left" type="submit">Send</Button>
                 </Form>
 
     </Col>
@@ -377,7 +402,7 @@ data-aos-once="false"
 <Container>
 	<Row>
 		<Col className="text-center" xs={12}>
-	<Link to='/'><Button className="btn-lg bg-transparent"
+	<Link to='/'><Button className="btn-xl bg-transparent"
 		data-aos="fade-left"
 		data-aos-delay="2000"
 		data-aos-duration="1300"

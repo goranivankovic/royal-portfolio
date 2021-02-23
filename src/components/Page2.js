@@ -171,11 +171,8 @@ export default class Page2 extends Component {
     data-aos-easing="ease-in-out"
     data-aos-once="false"
 	>
-        Hello everyone <br></br>
-My name is Goran Ivankovic i am self taught Programmer and Designer.
-I enjoy creating fully responsive websites with user friendly web experiences, and deliver highly accurate products that meet quality standard.
-Love  to learn new technologies,and make  unique ui/ux designs.
-
+		Hello, my name is Goran Ivankovic, and I am a self-taught Programmer and Designer. I enjoy creating fully responsive websites with user-friendly web experiences and deliver highly accurate products that meet the quality standard. I love to learn new technologies and make unique UI/UX designs.
+     
 
       
    
@@ -323,10 +320,8 @@ data-aos-once="false"
     data-aos-easing="ease-in-out"
     data-aos-once="false"
 	>
-        Hello everyone <br></br>
-My name is Goran Ivankovic i am self taught Programmer and Designer.
-I enjoy creating fully responsive websites with user friendly web experiences, and deliver highly accurate products that meet quality standard.
-Love  to learn new technologies,and make  unique ui/ux designs.
+		Hello, my name is Goran Ivankovic, and I am a self-taught Programmer and Designer. I enjoy creating fully responsive websites with user-friendly web experiences and deliver highly accurate products that meet the quality standard. I love to learn new technologies and make unique UI/UX designs.
+  
 
       
 
