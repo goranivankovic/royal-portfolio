@@ -11,6 +11,11 @@ import  {BrowserRouter,Switch,Route} from 'react-router-dom'
 export default class App extends React.Component{
   constructor(){
     super()
+
+    this.state={
+      ime:'Maja'
+    }
+    
   }
   render(){
   return (
@@ -24,14 +29,19 @@ export default class App extends React.Component{
         <Route exact path="/portfolio" component={Page4} />
         <Route exact path="/contact" component={Page5} />
 
+       
+      
+
 
         <Route exact path='*' component={()=>{return <div><h1>404 NOT FOUND</h1></div>}} />
 
     
-    
+
     
        </Switch>
+    
     </div>
+       
     </BrowserRouter>
   );
 }

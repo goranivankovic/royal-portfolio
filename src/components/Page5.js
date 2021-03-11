@@ -15,8 +15,8 @@ import 'aos/dist/aos.css';
 
 
 export default class Page5 extends Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state={
 			broj:0,
 			laz:false,
@@ -408,7 +408,8 @@ data-aos-once="false"
 		data-aos-duration="1300"
 		data-aos-easing="ease-out-cubic"
 		data-aos-once="false"
-		onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>Next</Button></Link>	
+		onMouseOver={this.mouseOnLi} onMouseLeave={this.mousOutLi}>NEXT
+		</Button></Link>	
 		</Col>
 	</Row>
 </Container>
